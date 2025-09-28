@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>أداة فحص الثغرات الأساسية - الحسين علي زيد القاسمي</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">
+                <h1>الحسين القاسمي</h1>
+            </div>
+            <ul class="nav-menu">
+                <li><a href="index.html">الرئيسية</a></li>
+                <li><a href="about.html">عني</a></li>
+                <li><a href="skills.html">المهارات</a></li>
+                <li><a href="portfolio.html">أعمالي</a></li>
+                <li><a href="contact.html">التواصل</a></li>
+                <li><a href="login.html">تسجيل الدخول</a></li>
+            </ul>
+            <div class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section class="project-header">
+            <div class="container">
+                <a href="portfolio.html" class="back-link">← العودة إلى الأعمال</a>
+                <h1>أداة فحص الثغرات الأساسية</h1>
+                <p class="project-subtitle">أداة Python لفحص الثغرات الأمنية في تطبيقات الويب</p>
+            </div>
+        </section>
+
+        <section class="project-content">
+            <div class="container">
+                <article class="project-details">
+                    <div class="project-image-large">
+                        <figure>
+                            <img src="images/project2_detail.jpg" alt="لقطة شاشة من أداة فحص الثغرات">
+                            <figcaption>واجهة أداة فحص الثغرات الأمنية في تطبيقات الويب</figcaption>
+                        </figure>
+                    </div>
+
+                    <section class="project-overview">
+                        <h2>نظرة عامة على المشروع</h2>
+                        <p>تم تطوير هذه الأداة كجزء من دراسة الاختراق الأخلاقي، وتهدف إلى فحص تطبيقات الويب واكتشاف الثغرات الأمنية الأساسية. تركز الأداة على الثغرات الشائعة مثل SQL Injection، XSS، وثغرات التحقق من المدخلات.</p>
+                        
+                        <p>يعتبر هذا المشروع خطوة مهمة في رحلة تعلم الاختراق الأخلاقي، حيث يطبق المفاهيم النظرية في بيئة عملية آمنة ومسيطر عليها. تم تطوير الأداة باستخدام Python ومكتباتها المتخصصة في أمان الويب.</p>
+                    </section>
+
+                    <section class="project-objectives">
+                        <h2>أهداف المشروع</h2>
+                        <ul>
+                            <li>فهم آليات الثغرات الأمنية الشائعة في تطبيقات الويب</li>
+                            <li>تطوير أداة عملية لفحص الثغرات الأساسية</li>
+                            <li>تطبيق مبادئ الاختراق الأخلاقي بشكل مسؤول</li>
+                            <li>تعلم استخدام مكتبات Python المتخصصة في أمان الويب</li>
+                            <li>إنشاء تقارير مفصلة حول الثغرات المكتشفة</li>
+                        </ul>
+                    </section>
+
+                    <section class="technologies-used">
+                        <h2>التقنيات المستخدمة</h2>
+                        <div class="tech-grid">
+                            <div class="tech-item">
+                                <h3>Python 3.8+</h3>
+                                <p>لغة البرمجة الأساسية للمشروع</p>
+                            </div>
+                            <div class="tech-item">
+                                <h3>Requests</h3>
+                                <p>مكتبة Python للتعامل مع HTTP requests</p>
+                            </div>
+                            <div class="tech-item">
+                                <h3>BeautifulSoup</h3>
+                                <p>لتحليل وتفسير محتوى HTML</p>
+                            </div>
+                            <div class="tech-item">
+                                <h3>Regular Expressions</h3>
+                                <p>للبحث عن أنماط محددة في الاستجابات</p>
+                            </div>
+                        </div>
+                    </section>
+
+                    <section class="vulnerability-types">
+                        <h2>أنواع الثغرات المدعومة</h2>
+                        <div class="vuln-list">
+                            <div class="vuln-item">
+                                <h3>SQL Injection</h3>
+                                <p>فحص المدخلات للكشف عن إمكانية حقن أوامر SQL ضارة في قاعدة البيانات.</p>
+                            </div>
+                            <div class="vuln-item">
+                                <h3>Cross-Site Scripting (XSS)</h3>
+                                <p>اكتشاف ثغرات XSS التي تسمح بحقن كود JavaScript ضار في الصفحات.</p>
+                            </div>
+                            <div class="vuln-item">
+                                <h3>Directory Traversal</h3>
+                                <p>فحص إمكانية الوصول إلى ملفات النظام خارج المجلد المخصص للتطبيق.</p>
+                            </div>
+                            <div class="vuln-item">
+                                <h3>Weak Authentication</h3>
+                                <p>تحليل آليات التحقق من الهوية واكتشاف نقاط الضعف فيها.</p>
+                            </div>
+                        </div>
+                    </section>
+
+                    <section class="project-features">
+                        <h2>مميزات الأداة</h2>
+                        <div class="features-list">
+                            <div class="feature-item">
+                                <h3>فحص تلقائي للثغرات</h3>
+                                <p>تقوم الأداة بفحص تلقائي للثغرات الأساسية دون تدخل يدوي مكثف.</p>
+                            </div>
+                            <div class="feature-item">
+                                <h3>تقارير مفصلة</h3>
+                                <p>إنتاج تقارير شاملة تتضمن تفاصيل الثغرات المكتشفة وتوصيات الإصلاح.</p>
+                            </div>
+                            <div class="feature-item">
+                                <h3>واجهة سطر الأوامر</h3>
+                                <p>واجهة بسيطة وسهلة الاستخدام عبر سطر الأوامر.</p>
+                            </div>
+                            <div class="feature-item">
+                                <h3>قابلية التخصيص</h3>
+                                <p>إمكانية تخصيص معايير الفحص وإضافة أنواع جديدة من الثغرات.</p>
+                            </div>
+                        </div>
+                    </section>
+
+                    <section class="ethical-considerations">
+                        <h2>الاعتبارات الأخلاقية</h2>
+                        <div class="ethics-note">
+                            <p><strong>تنبيه مهم:</strong> تم تطوير هذه الأداة لأغراض تعليمية وللاختراق الأخلاقي فقط. يجب استخدامها فقط على التطبيقات التي تملك إذناً صريحاً لفحصها.</p>
+                            <ul>
+                                <li>لا تستخدم الأداة على مواقع أو تطبيقات لا تملك إذناً لفحصها</li>
+                                <li>احترم قوانين الأمن السيبراني المحلية والدولية</li>
+                                <li>استخدم النتائج لتحسين الأمان وليس لأغراض ضارة</li>
+                                <li>أبلغ عن الثغرات المكتشفة بطريقة مسؤولة</li>
+                            </ul>
+                        </div>
+                    </section>
+
+                    <section class="challenges-solutions">
+                        <h2>التحديات والحلول</h2>
+                        <div class="challenge-item">
+                            <h3>التحدي: تجنب False Positives</h3>
+                            <p><strong>الحل:</strong> تطوير خوارزميات تحليل دقيقة وإجراء اختبارات متعددة للتأكد من صحة النتائج.</p>
+                        </div>
+                        <div class="challenge-item">
+                            <h3>التحدي: التعامل مع آليات الحماية المختلفة</h3>
+                            <p><strong>الحل:</strong> تطوير تقنيات متنوعة للتعامل مع WAF وآليات الحماية الأخرى.</p>
+                        </div>
+                        <div class="challenge-item">
+                            <h3>التحدي: الحفاظ على الأداء</h3>
+                            <p><strong>الحل:</strong> تحسين الخوارزميات واستخدام تقنيات التحميل المتوازي.</p>
+                        </div>
+                    </section>
+
+                    <section class="learning-outcomes">
+                        <h2>المخرجات التعليمية</h2>
+                        <blockquote>
+                            "هذا المشروع عمق فهمي لآليات الثغرات الأمنية وأهمية تطبيق مبادئ الأمان منذ بداية تطوير التطبيقات."
+                        </blockquote>
+                        <ul>
+                            <li>فهم عميق لآليات الثغرات الأمنية الشائعة</li>
+                            <li>تطوير مهارات البرمجة الأمنية</li>
+                            <li>تعلم مبادئ الاختراق الأخلاقي والمسؤول</li>
+                            <li>اكتساب خبرة في استخدام أدوات أمان الويب</li>
+                            <li>تطوير القدرة على كتابة تقارير أمنية مفصلة</li>
+                        </ul>
+                    </section>
+
+                    <section class="future-improvements">
+                        <h2>التطويرات المستقبلية</h2>
+                        <p>يمكن تطوير هذا المشروع أكثر من خلال:</p>
+                        <ul>
+                            <li>إضافة دعم لثغرات أكثر تقدماً</li>
+                            <li>تطوير واجهة رسومية للأداة</li>
+                            <li>إضافة ميزات التحليل التلقائي المتقدم</li>
+                            <li>تطوير قاعدة بيانات للثغرات المعروفة</li>
+                            <li>إضافة تكامل مع أدوات الأمان الأخرى</li>
+                        </ul>
+                    </section>
+
+                    <div class="project-navigation">
+                        <a href="project1.html" class="nav-btn">← المشروع السابق</a>
+                        <a href="portfolio.html" class="nav-btn">العودة إلى الأعمال</a>
+                    </div>
+                </article>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2025 الحسين علي زيد القاسمي. جميع الحقوق محفوظة.</p>
+            <div class="social-links">
+                <a href="https://instagram.com/sayed._.hsino" target="_blank">Instagram</a>
+                <a href="mailto:qasimiykrblaiy@gmail.com">البريد الإلكتروني</a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/script.js"></script>
+</body>
+</html>
+

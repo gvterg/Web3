@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>إنشاء حساب جديد - الحسين علي زيد القاسمي</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body class="auth-page">
+    <header>
+        <nav>
+            <div class="logo">
+                <h1><a href="index.html">الحسين القاسمي</a></h1>
+            </div>
+            <ul class="nav-menu">
+                <li><a href="index.html">الرئيسية</a></li>
+                <li><a href="about.html">عني</a></li>
+                <li><a href="skills.html">المهارات</a></li>
+                <li><a href="portfolio.html">أعمالي</a></li>
+                <li><a href="contact.html">التواصل</a></li>
+                <li><a href="login.html">تسجيل الدخول</a></li>
+            </ul>
+            <div class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </nav>
+    </header>
+
+    <main class="auth-main">
+        <section class="auth-container">
+            <div class="auth-card">
+                <div class="auth-header">
+                    <h1>إنشاء حساب جديد</h1>
+                    <p>انضم إلينا واحصل على وصول كامل لجميع المحتويات والموارد</p>
+                </div>
+
+                <form class="auth-form" id="registerForm">
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="firstName">الاسم الأول *</label>
+                            <input type="text" id="firstName" name="firstName" required placeholder="الاسم الأول">
+                            <span class="error-message" id="firstNameError"></span>
+                        </div>
+                        <div class="form-group">
+                            <label for="lastName">الاسم الأخير *</label>
+                            <input type="text" id="lastName" name="lastName" required placeholder="الاسم الأخير">
+                            <span class="error-message" id="lastNameError"></span>
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="registerEmail">البريد الإلكتروني *</label>
+                        <input type="email" id="registerEmail" name="email" required placeholder="أدخل بريدك الإلكتروني">
+                        <span class="error-message" id="registerEmailError"></span>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="phone">رقم الهاتف</label>
+                        <input type="tel" id="phone" name="phone" placeholder="رقم الهاتف (اختياري)">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="registerPassword">كلمة المرور *</label>
+                        <div class="password-input">
+                            <input type="password" id="registerPassword" name="password" required placeholder="أدخل كلمة مرور قوية">
+                            <button type="button" class="toggle-password" onclick="togglePassword('registerPassword')">
+                                <span class="show-text">إظهار</span>
+                                <span class="hide-text">إخفاء</span>
+                            </button>
+                        </div>
+                        <div class="password-strength" id="passwordStrength">
+                            <div class="strength-bar"></div>
+                            <span class="strength-text">قوة كلمة المرور</span>
+                        </div>
+                        <span class="error-message" id="registerPasswordError"></span>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="confirmPassword">تأكيد كلمة المرور *</label>
+                        <div class="password-input">
+                            <input type="password" id="confirmPassword" name="confirmPassword" required placeholder="أعد إدخال كلمة المرور">
+                            <button type="button" class="toggle-password" onclick="togglePassword('confirmPassword')">
+                                <span class="show-text">إظهار</span>
+                                <span class="hide-text">إخفاء</span>
+                            </button>
+                        </div>
+                        <span class="error-message" id="confirmPasswordError"></span>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="userType">نوع المستخدم</label>
+                        <select id="userType" name="userType">
+                            <option value="visitor">زائر</option>
+                            <option value="student">طالب</option>
+                            <option value="professional">محترف</option>
+                            <option value="recruiter">موظف HR</option>
+                            <option value="other">أخرى</option>
+                        </select>
+                    </div>
+
+                    <div class="form-group">
+                        <label class="checkbox-label">
+                            <input type="checkbox" id="agreeTerms" name="agreeTerms" required>
+                            <span class="checkmark"></span>
+                            أوافق على <a href="#" target="_blank">شروط الاستخدام</a> و <a href="#" target="_blank">سياسة الخصوصية</a> *
+                        </label>
+                        <span class="error-message" id="agreeTermsError"></span>
+                    </div>
+
+                    <div class="form-group">
+                        <label class="checkbox-label">
+                            <input type="checkbox" id="newsletter" name="newsletter">
+                            <span class="checkmark"></span>
+                            أرغب في تلقي النشرة الإخبارية والتحديثات
+                        </label>
+                    </div>
+
+                    <button type="submit" class="auth-btn primary">إنشاء الحساب</button>
+
+                    <div class="auth-divider">
+                        <span>أو</span>
+                    </div>
+
+                    <div class="social-login">
+                        <button type="button" class="social-btn google" onclick="socialLogin('google')">
+                            <span>التسجيل بـ Google</span>
+                        </button>
+                        <button type="button" class="social-btn github" onclick="socialLogin('github')">
+                            <span>التسجيل بـ GitHub</span>
+                        </button>
+                    </div>
+
+                    <div class="auth-footer">
+                        <p>لديك حساب بالفعل؟ <a href="login.html">تسجيل الدخول</a></p>
+                    </div>
+                </form>
+            </div>
+
+            <aside class="auth-info">
+                <div class="info-content">
+                    <h2>انضم إلى مجتمع الأمن السيبراني</h2>
+                    <p>بإنشاء حساب، ستحصل على:</p>
+                    <ul>
+                        <li>وصول إلى المحتوى التعليمي المتقدم</li>
+                        <li>تحميل الأدوات والسكريبتات المجانية</li>
+                        <li>مشاركة في المناقشات التقنية</li>
+                        <li>تحديثات حول ورش العمل والدورات</li>
+                        <li>شبكة تواصل مع المهتمين بالأمن السيبراني</li>
+                    </ul>
+                </div>
+
+                <div class="benefits-list">
+                    <h3>لماذا تنضم إلينا؟</h3>
+                    <div class="benefit-item">
+                        <h4>محتوى حصري</h4>
+                        <p>احصل على وصول لمقالات وأدوات متقدمة في الأمن السيبراني</p>
+                    </div>
+                    <div class="benefit-item">
+                        <h4>تحديثات مستمرة</h4>
+                        <p>كن أول من يعرف عن المشاريع والأدوات الجديدة</p>
+                    </div>
+                    <div class="benefit-item">
+                        <h4>مجتمع تفاعلي</h4>
+                        <p>تفاعل مع مجتمع من المهتمين بالأمن السيبراني</p>
+                    </div>
+                </div>
+            </aside>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2025 الحسين علي زيد القاسمي. جميع الحقوق محفوظة.</p>
+            <div class="social-links">
+                <a href="https://instagram.com/sayed._.hsino" target="_blank">Instagram</a>
+                <a href="mailto:qasimiykrblaiy@gmail.com">البريد الإلكتروني</a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/script.js"></script>
+</body>
+</html>

@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>التواصل - الحسين علي القاسمي</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">
+                <h1>الحسين القاسمي</h1>
+            </div>
+            <ul class="nav-menu">
+                <li><a href="index.html">الرئيسية</a></li>
+                <li><a href="about.html">عني</a></li>
+                <li><a href="skills.html">المهارات</a></li>
+                <li><a href="portfolio.html">أعمالي</a></li>
+                <li><a href="contact.html" class="active">التواصل</a></li>
+                <li><a href="login.html">تسجيل الدخول</a></li>
+            </ul>
+            <div class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section class="page-header">
+            <div class="container">
+                <h1>تواصل معي</h1>
+                <p>أرحب بالتواصل معي لمناقشة الفرص المهنية أو التعاون في المشاريع</p>
+            </div>
+        </section>
+
+        <section class="contact-content">
+            <div class="container">
+                <div class="contact-grid">
+                    <div class="contact-form-section">
+                        <h2>أرسل رسالة</h2>
+                        <form class="contact-form" id="contactForm">
+                            <div class="form-group">
+                                <label for="name">الاسم الكامل *</label>
+                                <input type="text" id="name" name="name" required>
+                                <span class="error-message" id="nameError"></span>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="email">البريد الإلكتروني *</label>
+                                <input type="email" id="email" name="email" required>
+                                <span class="error-message" id="emailError"></span>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="phone">رقم الهاتف</label>
+                                <input type="tel" id="phone" name="phone">
+                            </div>
+
+                            <div class="form-group">
+                                <label for="subject">موضوع الرسالة *</label>
+                                <select id="subject" name="subject" required>
+                                    <option value="">اختر موضوع الرسالة</option>
+                                    <option value="job">فرصة عمل</option>
+                                    <option value="collaboration">تعاون في مشروع</option>
+                                    <option value="consultation">استشارة أمنية</option>
+                                    <option value="training">تدريب أو ورشة عمل</option>
+                                    <option value="other">أخرى</option>
+                                </select>
+                                <span class="error-message" id="subjectError"></span>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="message">نص الرسالة *</label>
+                                <textarea id="message" name="message" rows="6" required placeholder="اكتب رسالتك هنا..."></textarea>
+                                <span class="error-message" id="messageError"></span>
+                            </div>
+
+                            <div class="form-group">
+                                <label class="checkbox-label">
+                                    <input type="checkbox" id="privacy" name="privacy" required>
+                                    <span class="checkmark"></span>
+                                    أوافق على <a href="#" target="_blank">سياسة الخصوصية</a> *
+                                </label>
+                                <span class="error-message" id="privacyError"></span>
+                            </div>
+
+                            <button type="submit" class="submit-btn">إرسال الرسالة</button>
+                        </form>
+                    </div>
+
+                    <div class="contact-info-section">
+                        <h2>معلومات التواصل</h2>
+                        <div class="contact-info">
+                            <div class="contact-item">
+                                <h3>البريد الإلكتروني</h3>
+                                <p><a href="mailto:qasimiykrblaiy@gmail.com">qasimiykrblaiy@gmail.com</a></p>
+                            </div>
+
+                            <div class="contact-item">
+                                <h3>رقم الهاتف</h3>
+                                <p><a href="tel:+967779963334">779063334</a></p>
+                            </div>
+
+                            <div class="contact-item">
+                                <h3>الموقع</h3>
+                                <p>صنعاء، اليمن</p>
+                            </div>
+
+                            <div class="contact-item">
+                                <h3>أوقات التواصل</h3>
+                                <p>الأحد - الخميس: 9:00 ص - 6:00 م</p>
+                                <p>الجمعة - السبت: 10:00 ص - 2:00 م</p>
+                            </div>
+                        </div>
+
+                        <div class="social-media">
+                            <h3>وسائل التواصل الاجتماعي</h3>
+                            <div class="social-links">
+                                <a href="https://instagram.com/sayed._.hsino" target="_blank" class="social-link instagram">
+                                    <span>Instagram</span>
+                                </a>
+                                <a href="mailto:qasimiykrblaiy@gmail.com" class="social-link email">
+                                    <span>البريد الإلكتروني</span>
+                                </a>
+                            </div>
+                        </div>
+
+                        <div class="availability">
+                            <h3>حالة التوفر</h3>
+                            <div class="status-indicator available">
+                                <span class="status-dot"></span>
+                                <span>متاح للمشاريع الجديدة</span>
+                            </div>
+                            <p>أبحث حالياً عن فرص تدريب وتعاون في مجال الأمن السيبراني</p>
+                        </div>
+                    </div>
+                </div>
+
+                <section class="faq-section">
+                    <h2>الأسئلة الشائعة</h2>
+                    <div class="faq-grid">
+                        <div class="faq-item">
+                            <h3>ما هي مجالات خبرتي؟</h3>
+                            <p>أتخصص في الأمن السيبراني، الاختراق الأخلاقي، وأمان الشبكات. كما أعمل على تطوير مهاراتي في Python ولغات البرمجة الأخرى.</p>
+                        </div>
+                        <div class="faq-item">
+                            <h3>هل أقدم استشارات أمنية؟</h3>
+                            <p>نعم، أقدم استشارات أساسية في مجال الأمن السيبراني للمشاريع الصغيرة والمتوسطة، خاصة في مجال أمان الشبكات.</p>
+                        </div>
+                        <div class="faq-item">
+                            <h3>هل أتوفر للعمل بدوام جزئي؟</h3>
+                            <p>نعم، أتوفر للعمل بدوام جزئي أو على أساس المشاريع، خاصة المشاريع التي تتعلق بالأمن السيبراني والتطوير.</p>
+                        </div>
+                        <div class="faq-item">
+                            <h3>كم يستغرق الرد على الرسائل؟</h3>
+                            <p>أحرص على الرد على جميع الرسائل خلال 24-48 ساعة. للاستفسارات العاجلة، يمكنك التواصل عبر الهاتف.</p>
+                        </div>
+                    </div>
+                </section>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2025 الحسين علي زيد القاسمي. جميع الحقوق محفوظة.</p>
+            <div class="social-links">
+                <a href="https://instagram.com/sayed._.hsino" target="_blank">Instagram</a>
+                <a href="mailto:qasimiykrblaiy@gmail.com">البريد الإلكتروني</a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/script.js"></script>
+</body>
+</html>
